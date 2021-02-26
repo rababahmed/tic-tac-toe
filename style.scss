@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: whitesmoke;
+
+  .topBar {
+    width: 100%;
+
+    background-color: rgb(58, 149, 209);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .gameTitle {
+      font-size: 50px;
+      font-weight: 800;
+      color: white;
+    }
+  }
+  .mainContainer {
+    position: relative;
+    top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .noticeText {
+      font-size: 40px;
+      font-weight: 900;
+      padding: 20px 40px;
+      margin: 20px;
+      color: black;
+      max-width: 80%;
+      background: white;
+      text-align: center;
+      border-radius: 20px;
+    }
+
+    .gameBoard {
+    }
+
+    .restartSection {
+      .restartBtn {
+        outline: none;
+        cursor: pointer;
+        background: rgb(58, 149, 209);
+        color: white;
+        font-weight: 600;
+        font-size: 30px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 20px;
+      }
+
+      .restartBtn:hover {
+        box-shadow: 0px 0px 15px rgba(161, 161, 161, 0.788);
+        font-size: 35px;
+      }
+    }
+  }
+}

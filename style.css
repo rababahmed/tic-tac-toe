@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: whitesmoke;
+}
+
+body .topBar {
+  width: 100%;
+  background-color: #3a95d1;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .topBar .gameTitle {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+
+body .mainContainer {
+  position: relative;
+  top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .mainContainer .noticeText {
+  font-size: 40px;
+  font-weight: 900;
+  padding: 20px 40px;
+  margin: 20px;
+  color: black;
+  max-width: 80%;
+  background: white;
+  text-align: center;
+  border-radius: 20px;
+}
+
+body .mainContainer .restartSection .restartBtn {
+  outline: none;
+  cursor: pointer;
+  background: #3a95d1;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+}
+
+body .mainContainer .restartSection .restartBtn:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(161, 161, 161, 0.788);
+          box-shadow: 0px 0px 15px rgba(161, 161, 161, 0.788);
+  font-size: 35px;
+}
+/*# sourceMappingURL=style.css.map */
