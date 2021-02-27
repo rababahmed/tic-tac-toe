@@ -52,19 +52,72 @@ body .mainContainer {
           align-items: center;
 }
 
-body .mainContainer .noticeText {
+body .mainContainer .status {
   font-size: 40px;
   font-weight: 900;
   padding: 20px 40px;
   margin: 20px;
-  color: black;
+  color: white;
   max-width: 80%;
-  background: white;
+  background: #3a95d1;
   text-align: center;
   border-radius: 20px;
 }
 
+body .mainContainer .statusX::before {
+  content: "Player O's turn";
+}
+
+body .mainContainer .statusO::before {
+  content: "Player X's turn";
+}
+
+body .mainContainer .gameBoard {
+  position: relative;
+  padding: 20px;
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  border: 3px solid #3a95d1;
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin: 0px auto;
+}
+
+body .mainContainer .gameBoard .field {
+  margin-left: 13px;
+  margin-top: 13px;
+  display: block;
+  color: #3a95d1;
+  height: 160px;
+  width: 160px;
+  font-size: 7rem;
+  border: 2px solid #3a95d1;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+body .mainContainer .gameBoard .x::before {
+  content: "X";
+}
+
+body .mainContainer .gameBoard .o::before {
+  content: "O";
+}
+
+body .mainContainer .gameBoard .field:hover {
+  background-color: rgba(58, 149, 209, 0.3);
+  color: white;
+  text-shadow: 0px 5px 10px rgba(58, 149, 209, 0.4);
+}
+
 body .mainContainer .restartSection .restartBtn {
+  position: relative;
+  top: 2vh;
   outline: none;
   cursor: pointer;
   background: #3a95d1;
